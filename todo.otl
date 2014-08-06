@@ -18,7 +18,7 @@ Descisions to make
 			heroku
 
 Core Functionality Roadmap
-	[_] mock map with point             - half
+	[X] mock map with point             - half
 	[_] searchable static data set      - half
 	[_] mock endpoints + tests          - day
 	[_] database + tests                - day
