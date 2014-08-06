@@ -1,0 +1,30 @@
+Descisions to make
+	Client
+		[_] map 
+			google
+			leaflet
+			openstreetmap
+		[_] search
+			fuzzysetjs
+			jquery
+	Server
+		[_] logic and routes
+			flask
+		[_] database
+			elasticsearch vs postgres
+		[_] testing
+			py.test vs pyUnit
+		[X] deployment
+			heroku
+
+Core Functionality Roadmap
+	[_] mock map with point             - half
+	[_] searchable static data set      - half
+	[_] mock endpoints + tests          - day
+	[_] database + tests                - day
+
+Other stuff
+	design                              - half
+	optimization                        - half
+	bonus features / search options     - half 
+
