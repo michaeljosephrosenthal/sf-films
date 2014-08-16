@@ -1,34 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-      <style type="text/css">
-        html { height: 100% }
-        body { height: 100%; margin: 0; padding: 0 }
-        #map-canvas { height: 100% }
-      </style>
-      <script type="text/javascript"
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBstN-KH1JA9gB3xeH0ayhpgflRzipaqr0">
-      </script>
-      <script type="text/javascript">
-        function initialize() {
-          var mapOptions = {
-            center: new google.maps.LatLng(37.758895, -122.414724),
-            zoom: 8
-          };
-          var map = new google.maps.Map(document.getElementById("map-canvas"),
-              mapOptions);
-          var marker = new google.maps.Marker({
-              position: new google.maps.LatLng(37.758895, -122.414724),
-              map: map,
-              title:"Hello World!"
-          });
-        }
-        google.maps.event.addDomListener(window, 'load', initialize);
-      </script>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+        <style type="text/css">
+            html { height: 100% }
+            body { height: 100%; margin: 0; padding: 0 }
+            #map-canvas { height: 100% }
+        </style>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='lib/underscore-min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='lib/backbone-min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='index.js') }}"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBstN-KH1JA9gB3xeH0ayhpgflRzipaqr0"></script>
     </head>
+
     <body>
-      <div id="map-canvas"/>
+        <div id="app">
+            <div id="map-canvas"></div>
+            <div id="trucks"><ul></ul></div>
+        </div>
     </body>
 </html>
 
